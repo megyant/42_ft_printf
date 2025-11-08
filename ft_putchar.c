@@ -1,26 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mbotelho <mbotelho@student.42.fr>          +#+  +:+       +#+        */
+/*   By: megyant <megyant@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/20 11:29:39 by mbotelho          #+#    #+#             */
-/*   Updated: 2025/10/22 08:15:09 by mbotelho         ###   ########.fr       */
+/*   Created: 2025/11/07 12:44:39 by mbotelho          #+#    #+#             */
+/*   Updated: 2025/11/08 20:26:06 by megyant          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_printf.h"
 
-int	ft_isascii(int c)
+int	ft_putchar(int c)
 {
-	if (c >= 0 && c <= 127)
-		return (1);
-	return (0);
+	return (write(1, &c, 1));
 }
 
-/*int	main(void)
-{
-	printf("%d", ft_isalpha('A'))
-	return (0);
-}*/
