@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: megyant <megyant@student.42.fr>            +#+  +:+       +#+        */
+/*   By: mbotelho <mbotelho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/07 12:01:04 by mbotelho          #+#    #+#             */
-/*   Updated: 2025/11/08 22:47:33 by megyant          ###   ########.fr       */
+/*   Updated: 2025/11/10 08:49:20 by mbotelho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,17 +17,16 @@
 # include <stdarg.h>
 # include <stdio.h>
 # include <unistd.h>
- #include <stddef.h>
+# include <stddef.h>
 
 int	ft_putchar(int c);
-int ft_putstr(char *str);
+int	ft_putstr(char *str);
 int	ft_putnbr_base(long n, int base);
 int	ft_putnbr_base_upper(long n, int base);
-int ft_putnbr_unsigned(unsigned int n);
-int ft_putadress(unsigned long n);
-int ft_print_adress(va_list args);
-int print_format(char specifier, va_list args);
+int	ft_putnbr_unsigned(unsigned int n);
+int	ft_putadress(unsigned long n);
+int	ft_print_adress(va_list args);
+int	print_format(char specifier, va_list args);
 int	ft_printf(const char *format, ...);
-
 
 #endif

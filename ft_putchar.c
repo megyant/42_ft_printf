@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: megyant <megyant@student.42.fr>            +#+  +:+       +#+        */
+/*   By: mbotelho <mbotelho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/07 12:44:39 by mbotelho          #+#    #+#             */
-/*   Updated: 2025/11/08 20:26:06 by megyant          ###   ########.fr       */
+/*   Updated: 2025/11/10 08:44:05 by mbotelho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,4 +16,3 @@ int	ft_putchar(int c)
 {
 	return (write(1, &c, 1));
 }
-

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: megyant <megyant@student.42.fr>            +#+  +:+       +#+        */
+/*   By: mbotelho <mbotelho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/06 12:33:04 by mbotelho          #+#    #+#             */
-/*   Updated: 2025/11/08 22:49:25 by megyant          ###   ########.fr       */
+/*   Updated: 2025/11/10 08:43:45 by mbotelho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 int	ft_printf(const char *format, ...)
 {
-	va_list args;
-	int count;
-	size_t i;
+	va_list	args;
+	int		count;
+	size_t	i;
 
 	if (!format)
 		return (-1);
@@ -34,28 +34,28 @@ int	ft_printf(const char *format, ...)
 	return (count);
 }
 
-int print_format(char specifier, va_list args)
+int	print_format(char specifier, va_list args)
 {
-    int count;
+	int	count;
 
 	count = 0;
-    if (specifier == 'c')
-        count += ft_putchar(va_arg(args, int));
-    else if (specifier == 's')
-        count += ft_putstr(va_arg(args, char *));
-    else if (specifier == '%')
-        count += ft_putchar('%');
-    else if (specifier == 'd' || specifier == 'i')
-        count += ft_putnbr_base((long)va_arg(args, int), 10);
-    else if (specifier == 'x')
-        count += ft_putnbr_base((long)va_arg(args, unsigned int), 16);
-    else if (specifier == 'X')
-        count += ft_putnbr_base_upper((long)va_arg(args, unsigned int), 16);
+	if (specifier == 'c')
+		count += ft_putchar(va_arg(args, int));
+	else if (specifier == 's')
+		count += ft_putstr(va_arg(args, char *));
+	else if (specifier == '%')
+		count += ft_putchar('%');
+	else if (specifier == 'd' || specifier == 'i')
+		count += ft_putnbr_base((long)va_arg(args, int), 10);
+	else if (specifier == 'x')
+		count += ft_putnbr_base((long)va_arg(args, unsigned int), 16);
+	else if (specifier == 'X')
+		count += ft_putnbr_base_upper((long)va_arg(args, unsigned int), 16);
 	else if (specifier == 'u')
 		count += ft_putnbr_unsigned((long)va_arg(args, unsigned int));
 	else if (specifier == 'p')
 		count += ft_print_adress(args);
-    else
-        count = -1;
-    return (count);
+	else
+		count = -1;
+	return (count);
 }
