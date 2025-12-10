@@ -1,6 +1,7 @@
 # Ft_printf
+This project has been created as part of the 42 curriculum.
 
-## About the project
+## Description
 Ft_printf is part of the projects to be completed during the Milestone 1 of Common Core at 42 school. This project consists of reconding some parts of printf() function from libc.  
   
 The function had to handle the following conversions:
@@ -26,7 +27,7 @@ I did not complete any of those.
 
 ## Tools and insights
 
-### Useful tools
+### Resources
 - [Francinette](https://github.com/xicodomingues/francinette)
   - Thorough testing of printf
 - [Ft_printf Guide](https://42-cursus.gitbook.io/guide/1-rank-01/ft_printf)
@@ -51,7 +52,7 @@ Make sure you know what your code is doing
 
 ## Important Message
   
-DO NOT COPY OR CHEAT, YOU WILL NOT BE HELPING YOURSELF. USE THIS ONLY TO GET THE LOGIC.
+DO NOT COPY OR CHEAT, YOU WILL NOT BE HELPING YOURSELF.
 
 ## Completion
 
